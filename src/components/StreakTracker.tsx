@@ -1,0 +1,1 @@
+import{Flame,Target,Star}from'lucide-react';export default function StreakTracker({count=0}:{count?:number}){return <div className="stats"><div><Flame/><b>{count}</b><small>correct today</small></div><div><Target/><b>{Math.min(100,count*10)}%</b><small>daily goal</small></div><div><Star/><b>{count?1:0}</b><small>day streak</small></div></div>}
